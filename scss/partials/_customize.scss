@@ -1,0 +1,53 @@
+.customize {
+  scroll-behavior: smooth;
+
+  background-color: $section_customize_bg_color;
+  padding-bottom: 32px;
+
+  &__name {
+    margin-top: -14px;
+  }
+
+  &__uptitle {
+    color: $blue_color;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+
+  &__title {
+    margin-top: 16px;
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 0.1px;
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../images/hover_line.png");
+      background-size: cover;
+      width: 42px;
+      height: 2px;
+      position: absolute;
+      text-decoration: none;
+      margin: auto;
+      left: 0;
+      top: 66px;
+    }
+  }
+
+  &__phone {
+    max-width: 718px;
+    margin-top: 33px;
+    margin-left: -19px;
+  }
+
+  &__paragraph {
+    margin-top: 55px;
+
+    color: $grey_color;
+    line-height: 26px;
+  }
+}

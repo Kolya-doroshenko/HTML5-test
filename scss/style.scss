@@ -1,0 +1,44 @@
+@import "partials/reset"; // include reset
+@import "partials/mixins"; //include mixin`s.
+@import "partials/fonts"; //include fonts
+@import "partials/vars"; //include variables.
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+
+  button:active,
+  button:focus {
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: 0;
+  }
+
+  @media (min-width: 1170px) {
+    .container {
+      max-width: 1170px;
+    }
+  }
+}
+body._lock{
+  overflow: hidden;
+}
+
+
+@import "partials/visit";
+@import "partials/header";
+@import "partials/features";
+@import "partials/details";
+@import "partials/customize";
+@import "partials/quality";
+@import "partials/like";
+@import "partials/pricings";
+@import "partials/findus";
+@import "partials/footer";
+
+@import "partials/pointbreak";
+@import "partials/slick.scss";
+
+

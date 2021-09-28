@@ -1,0 +1,92 @@
+.header {
+  scroll-behavior: smooth;
+  position: fixed;
+  width: 100%;
+  z-index: 1000000;
+
+  .row {
+    height: 99px;
+  }
+
+  &__lines {
+    display: flex;
+    width: fit-content;
+
+    .lines__button {
+      outline: none;
+      border: none;
+      background-color: $blue_color;
+      border-radius: 2px;
+
+      .lines__icon {
+      }
+    }
+
+    &__items {
+    }
+  }
+
+  &__nav {
+    margin-bottom: 0px;
+    margin-left: 15px;
+  }
+
+  &__logo {
+    display: flex;
+    padding-left: 2px;
+
+    &_sub {
+      padding-left: 7px;
+      height: 16px;
+      width: 51px;
+      align-self: flex-end;
+    }
+  }
+
+  .header__list {
+    display: inline-flex;
+    flex-direction: row;
+
+    li {
+      margin-left: 23px;
+      a {
+        outline: none;
+      }
+    }
+
+    .header__nav__items {
+      color: #fffefe;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 41px;
+      position: relative;
+      text-decoration: none;
+      &:after {
+        opacity: 0;
+        content: "";
+        display: block;
+        background-image: url("../images/hover_line.png");
+        background-size: cover;
+        width: 42px;
+        height: 2px;
+        position: absolute;
+        text-decoration: none;
+        margin: auto;
+        top: 40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+      }
+
+      &:hover:after {
+        opacity: 1;
+      }
+    }
+  }
+}
